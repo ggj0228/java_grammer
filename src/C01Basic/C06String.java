@@ -246,7 +246,7 @@ public class C06String {
 //        sb.append("python");
 //        sb.append("\n");
 //        sb.append("javascript");
-//        String answer = sb.toString();
+//        String answer = sb.toString();  // sb 객체를 String 타입으로 변환
 //        System.out.println(answer);
 //
 //        String[] arr = {"java", "python","javascript"};
@@ -280,7 +280,6 @@ public class C06String {
         String A = "hello";
         String B = "asn";
         int answer = -1;
-
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i<A.length(); i++) {
             sb.append(A.charAt(i));
