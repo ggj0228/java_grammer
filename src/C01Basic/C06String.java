@@ -276,29 +276,37 @@ public class C06String {
 //        }
 //        System.out.println(sb);
         /* *************************************************** */
-//          프로그래머스 문자열 밀기
-        String A = "hello";
-        String B = "asn";
-        int answer = -1;
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i<A.length(); i++) {
-            sb.append(A.charAt(i));
-        }
-            if(A.equals(B)) {
-                answer =0;
-            } else {
-                for (int i = 1; i <= A.length(); i++) {
-                    sb.insert(0, sb.charAt(sb.length() - 1));
-                    sb.deleteCharAt(sb.length() - 1);
 
-                    if (sb.toString().equals(B)) {
-                        answer = i;
-                        break;
-                    }
-                }
-            }
-        System.out.println(answer);
-        }
+        // 문자열 비교
+        String s1 = "hello";
+        String s2 = "dello";
+        String s3 = "hello";
+        System.out.println(s1.compareTo(s2));   // 양수
+        System.out.println(s2.compareTo(s1));   // 음수
+
+//          프로그래머스 문자열 밀기
+//        String A = "hello";
+//        String B = "ohell";
+//        int answer = -1;
+//        StringBuilder sb = new StringBuilder();
+//        for (int i = 0; i<A.length(); i++) {
+//            sb.append(A.charAt(i));
+//        }
+//            if(A.equals(B)) {
+//                answer =0;
+//            } else {
+//                for (int i = 1; i <= A.length(); i++) {
+//                    sb.insert(0, sb.charAt(sb.length() - 1));
+//                    sb.deleteCharAt(sb.length() - 1);
+//
+//                    if (sb.toString().equals(B)) {
+//                        answer = i;
+//                        break;
+//                    }
+//                }
+//            }
+//        System.out.println(answer);
+       }
 
 
 
