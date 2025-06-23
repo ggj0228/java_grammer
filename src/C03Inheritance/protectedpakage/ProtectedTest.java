@@ -1,4 +1,4 @@
-package protectedpakage;
+package C03Inheritance.protectedpakage;
 
 
 // 같은 패키지내의 클래스가 아닌 경우에는 import 필요
